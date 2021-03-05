@@ -2,6 +2,8 @@
 
 super simple GitHub Action which automatically creates PRs to keep a branch in sync with another
 
+Based on "fork-sync" action by tgymnich
+
 ## How it works
 
 - check if another Auto-PR is already opened for the repo
