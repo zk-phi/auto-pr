@@ -1,0 +1,26 @@
+name: 'Auto PR'
+description: 'Automatically create PR when a specified branch is ahead of another'
+author: 'zk-phi'
+branding:
+  icon: 'git-branch'
+  color: 'black'
+inputs:
+  github_token:
+    description: 'Token for the github API'
+    required: true
+  head:
+    description: 'Branch to be merged into BASE'
+    required: false
+    default: 'master'
+  base:
+    description: 'Branch to merge HEAD into'
+    required: false
+    default: 'master'
+  merge_method:
+    description: 'Merge method to use'
+    required: false
+    default: 'merge'
+
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
