@@ -2,7 +2,6 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "@octokit/plugin-retry": "^3.0.7",
     "@octokit/rest": "^18.0.15"
   }
 }
