@@ -27,7 +27,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: zk-phi/auto-pr@master
+      - uses: zk-phi/auto-pr@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           base: 'master'
