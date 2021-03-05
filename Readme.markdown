@@ -20,6 +20,7 @@ Example:
 name: Auto PR
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
 
@@ -27,7 +28,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: zk-phi/auto-pr@v0
+      - uses: zk-phi/auto-pr@v0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           base: 'master'
